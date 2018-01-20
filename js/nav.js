@@ -6,7 +6,7 @@
 
   navToggle.addEventListener('click', function (evt) {
     evt.preventDefault();
-    nav.classList.toggle('main-nav--close');
-    navToggle.classList.toggle('main-nav__toggle--close');
+    nav.classList.toggle('main-nav_close');
+    navToggle.classList.toggle('main-nav__toggle_close');
   });
 })();
