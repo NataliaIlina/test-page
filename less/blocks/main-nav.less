@@ -1,9 +1,15 @@
 .main-nav {
   position: relative;
-  width: ~"calc(100% - 100px)";
+  width: ~"calc(100% - 140px)";
 
   @media @only-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
     padding-top: 70px;
+    padding-right: 20px;
+    background-color: @black;
 
     &--close .main-nav__link {
       display: none;
@@ -24,7 +30,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 15px;
-  right: 10px;
+  right: 30px;
   width: 30px;
   height: 40px;
   cursor: pointer;
@@ -71,7 +77,6 @@
 .main-nav__link {
   display: block;
   padding: 10px;
-  font-weight: @regular;
   text-align: right;
   text-decoration: underline;
 
