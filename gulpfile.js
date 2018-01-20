@@ -17,6 +17,12 @@ var imagemin = require('gulp-imagemin');
 var watch = require('gulp-watch');
 var del = require('del');
 var run = require('gulp-run-sequence');
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
+});
 
 var path = {
   build: {
