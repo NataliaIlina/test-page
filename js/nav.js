@@ -1,12 +1,1 @@
-'use strict';
-
-(function () {
-  var nav = document.querySelector('.main-nav');
-  var navToggle = nav.querySelector('.main-nav__toggle');
-
-  navToggle.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    nav.classList.toggle('main-nav--close');
-    navToggle.classList.toggle('main-nav__toggle--close');
-  });
-})();
+"use strict";!function(){var e=document.querySelector(".main-nav"),t=e.querySelector(".main-nav__toggle");t.addEventListener("click",function(n){n.preventDefault(),e.classList.toggle("main-nav--close"),t.classList.toggle("main-nav__toggle--close")})}();
