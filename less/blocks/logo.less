@@ -1,0 +1,46 @@
+.logo {
+  width: 90px;
+  min-height: 70px;
+
+  @media @desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+  }
+}
+
+.logo__link {
+  display: flex;
+  width: 90px;
+  height: 70px;
+
+  @media @desktop {
+    margin-right: 30px;
+
+    &:hover,
+    &:focus{
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.logo__image {
+  align-self: center;
+  margin: auto;
+}
+
+.logo__description {
+  display: none;
+
+  @media @desktop {
+    display: block;
+    font-size: 16.5px;
+    font-weight: @light;
+    opacity: 0.65;
+  }
+}
