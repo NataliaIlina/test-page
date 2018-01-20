@@ -1,5 +1,4 @@
 .DS_Store
-.publish
 .idea
 *.ai
 *.log
@@ -12,4 +11,4 @@ build/
 npm-debug.*
 Thumbs.db
 img/icons.svg
-img/icons/
+.publish
